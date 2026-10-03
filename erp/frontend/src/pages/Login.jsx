@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React,{useState} from "react";
 import {Link,useNavigate} from "react-router-dom";
 import {useAuth} from "../context/AuthContext";
 
@@ -24,7 +24,7 @@ export default function Login() {
   return <div className="auth">
     <form className="auth-box" onSubmit={submit}>
       <h1>Login</h1>
-      <p>Employee Management System</p>
+      <p>Employee Resource Planning</p>
       {error && <div className="error">{error}</div>}
       <label>Email</label>
       <input type="email" value={form.email} onChange={e=>setForm({...form,email:e.target.value})}/>

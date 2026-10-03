@@ -1,12 +1,13 @@
 import {NavLink, Outlet} from "react-router-dom";
 import {useAuth} from "../context/AuthContext";
+import React from "react"
 
 export default function Layout() {
   const {user, logout} = useAuth();
   return (
     <div className="shell">
       <aside className="sidebar">
-        <h2>EmpManage</h2>
+        <h2>Manage</h2>
         <nav>
           <NavLink to="/dashboard">Dashboard</NavLink>
           <NavLink to="/employees">Employees</NavLink>

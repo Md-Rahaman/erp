@@ -1,4 +1,4 @@
-import {useEffect,useState} from "react";
+import React,{useEffect,useState} from "react";
 import {BarChart,Bar,XAxis,YAxis,Tooltip,CartesianGrid,ResponsiveContainer} from "recharts";
 import api from "../services/api";
 import StatCard from "../components/StatCard";
